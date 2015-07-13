@@ -3,4 +3,7 @@ extends layout
 block content
   h1 Testing express.js
   p Welcome to #{title}
-  
+  a(href='#') Link to nothing
+  hr
+  div(ng-controller='testController')
+    p(ng-repeat='person in persons') {{ person | capitalize }}
